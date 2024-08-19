@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: 0;
+    list-style: none;
+}
+
+body {
+    margin: auto;    
+    font-family: 'Open Sans';
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background: url('./assets/images/header-background.png') no-repeat;    
+    background-size: cover;
+}
+
+.header-content {
+    max-width: 760px;
+    padding-top: 94px;
+}
+
+.header-content h1 {
+    font-family: 'Luckiest Guy';
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: 3.5rem;
+    letter-spacing: 0.1rem;
+    color: #FFFFFF;
+       
+}
+
+.header-content p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 1.4rem;
+}
+
+.header-content h1, .header-content p {
+    padding-bottom: 24px; 
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1rem;
+    padding-bottom: 94px;
+}
+
+.header-buttons #windowsDownload, .header-buttons #openBrowser {
+    padding: 16px 32px;
+    border-radius: 28px;
+}
+
+.header-buttons #windowsDownload {
+    background-color: #FFFFFF;  
+    color: #23272A;    
+    transition: 0.2s;
+}
+
+.header-buttons #windowsDownload svg { 
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.header-buttons #openBrowser {
+    background-color: #23272A;
+    color: #FFFFFF;
+    transition: 0.2s;
+}
+
+.header-buttons #windowsDownload:hover {    
+    cursor: pointer;
+    color: #5865f2;;
+    box-shadow: 0 8px 15px rgb(0 0 0 / 20%);
+}
+
+.header-buttons #openBrowser:hover {
+    background-color: hsl(220,7.7%,22.9%);
+    box-shadow: 0 8px 15px rgb(0 0 0 / 20%);
+    cursor: pointer;    
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 58px;
+    text-align: left;
+    color: #23272A;
+    margin-top: 40px;
+}
+
+main section {    
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    width: 100%; 
+}
+
+main section:nth-child(even) {
+    background-color: #f6f6f6;
+}
+
+.section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 970px;
+}
+
+main section img {
+    padding: 20px 8px;
+    object-fit: fill;
+}
+
+main section .content h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 3.5rem;
+    margin-bottom: 16px;
+}
+
+main section .content p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+    text-align: left;
+}
+
+
+main section:last-child .section-container {    
+    flex-direction: column;    
+    padding-top: 40px;
+}
+
+main section:last-child .content {
+    max-width: 800px;
+    margin-top: 16px;
+    text-align: center;
+}
+
+main section:last-child .content h1 {
+    font-family: 'Luckiest Guy';
+    font-weight: 400;    
+    line-height: 2.5rem;
+}
+
+main section:last-child .content p {
+    text-align: center;
+    margin-top: 16px;
+}
+
+main section:last-child .section-container img {
+    padding: 8px;
+}
+
+footer {
+    display: flex;    
+    justify-content: center;
+    background-color: #23272A;
+}
+
+footer img { 
+    padding: 36px 8px;
+}
+
+
+@media screen and (max-width: 425px) {
+    body {        
+        width: 425px;    
+    }
+    
+    header {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: left;    
+        background: url('./assets/images/header-background.png') no-repeat;    
+        
+    }
+    
+    .header-content {
+        max-width: 380px;
+        padding: 70px 24px 0;
+    }
+    
+    .header-content h1 {    
+        font-size: 2rem;    
+        line-height: 2rem;
+    }
+    
+    .header-buttons {         
+        flex-direction: column;        
+        text-align: center;
+        padding-bottom: 70px;
+    }
+    
+    .header-buttons #windowsDownload, .header-buttons #openBrowser {    
+        width: 316px;    
+    }
+    
+    main {    
+        gap: 40px;    
+        margin-top: 20px;
+    }
+    
+    .section-container {    
+        flex-direction: column;
+        max-width: 370px;
+    }
+    
+    main section:nth-child(2) .section-container {
+        flex-direction: column-reverse;
+    }   
+    
+    main section img {    
+        width: 380px;
+    }
+    
+    main section .content h1 {
+        font-size: 1.5rem;    
+        line-height: 2rem;    
+    }
+    
+    main section .content p {
+        font-size: 1rem;    
+        line-height: 1.4rem;    
+    }
+    
+    main section:last-child .content h1 {
+        font-size: 2rem;
+    }
+    
+}
