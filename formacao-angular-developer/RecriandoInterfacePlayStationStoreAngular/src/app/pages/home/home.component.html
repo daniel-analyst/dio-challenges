@@ -1,0 +1,6 @@
+<div class="home__container">
+  @for (item of games; track item) {
+    <app-card [dataCardPricing]="item.cardPricing" [dataGame]="item.cardGame"></app-card>
+  }
+</div>
+
